@@ -8,9 +8,10 @@ int main(int argc,char *argv[]){
   unsigned char b[NUM];
   int cp=0,cl=0,bp=0,l=0;
   int i;
-  if(argc != 2 || (f=fopen(argv[1],"r")) == NULL) 
+  if(argc != 2 || (f=fopen(argv[1],"r")) == NULL){
   std::cout << "error!" << std::endl;
   return -1;
+  }
   for(cl = 0; (c[cl]=fgetc(f)) != EOF && cl < NUM; cl++);
   for(i = 0; i < NUM; i++) b[i] = 0;
   for(; cp < cl; cp++){
