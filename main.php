@@ -64,8 +64,8 @@ for($i = 0; $i < count($bf); $i++){
             echo "対応する']'がありません\n";
             exit(1);
           }
-          if($bf[$i] == '[') $cnt++;
-          elseif($bf[$i] == ']') $cnt--;
+          if($bf[$i] == '[') ++$cnt;
+          elseif($bf[$i] == ']') --$cnt;
         }
       }
       break;
