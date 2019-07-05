@@ -74,7 +74,7 @@ int main(int argc, char *argv[]){
           while(cnt != 0){
             i++;
             // 探索が終端まで達してしまったらエラーを返す
-            if(src.size()){
+            if(i == src.size()){
               std::cerr << "対応する']'がありません" << std::endl;
               return -1;
             }
