@@ -1,9 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <cstdio>
-#include <cstdlib>
-#include <vector>
-#include <string>
+#include <bits/stdc++.h>
 #define MEMORY 30000
 
 int main(int argc, char *argv[]){
@@ -74,7 +69,7 @@ int main(int argc, char *argv[]){
           while(cnt != 0){
             i++;
             // 探索が終端まで達してしまったらエラーを返す
-            if(i == src.size()){
+            if(i == src.length()){
               std::cerr << "対応する']'がありません" << std::endl;
               return -1;
             }
